@@ -1,0 +1,104 @@
+<?php
+include("../php/articulos.php");
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/conferencia.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+    <title>Conferencias</title>
+</head>
+
+<body>
+    <!-- Colocamos el menú de navegación creado en nuestro componente -->
+    <main-navbar></main-navbar>
+
+    <main class="main">
+
+        <section class="main__section">
+            <div class="main__image">
+                <div class="main__title__donaciones">
+                    <h1>Conferencias</h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="add__container" id="add__container">
+          
+            <section class="add">
+                <div class="add__tittle">
+                    <h2 class="add__text__h2">Agregar un artículo</h2>
+                </div>
+
+                <div class="main__form" id="main__form">
+                    <form action="../php/articulos.php" method="post" enctype="multipart/form-data" class="add__form">
+
+                        <div class="main__input add_form_tittle">
+                            <label for="tittle">Nombre del artículo:</label><br>
+                            <input type="text" id="tittle" name="tittle" class="main__input__answer" required>
+                        </div>
+
+                        <div class="main__input add_form_author">
+                            <label for="author">Nombre del autor:</label><br>
+                            <input type="text" id="author" name="author" class="main__input__answer" required><br><br>
+                            <button class="new_author" id="new_author">¿Deseas Agregar otro autor?</button>
+                        </div>
+
+                        <div class="main__input add_form_address">
+                            <label for="address">Dirección de adscripción:</label><br>
+                            <input type="text" id="address" name="address" class="main__input__answer" required>
+                        </div>
+
+                        <div class="main__input add_form_institution">
+                            <label for="institution">Institución de adscripción:</label><br>
+                            <input type="text" id="institution" name="institution" class="main__input__answer" required>
+                        </div>
+
+                        <div class="main__input add_form_abstract">
+                            <label for="abstract">Resúmen: (límitado a 250 carácteres)</label><br>
+                            <textarea id="abstract" name="abstract" cols="50" rows="5"></textarea>
+                        </div>
+
+                        <div class="main__input add_form_keywords">
+                            <label for="keywords">Palabras clave:</label><br>
+                            <input type="text" id="keywords" name="keywords" class="main__input__answer" required>
+                        </div>
+
+                        <div class="main__input add_form_file">
+                            <label for="file">Subir trabajo final:</label><br><br>
+                            <input type="file" id="file" name="file" class="main__input__answer" required>
+                        </div>
+
+                        <div class="main__input add_form_option">Tipo de trabajo: <br><br>
+                            <label for="option">Selecciona el tipo de trabajo:</label><br><br>
+                            <select name="option" id="option">
+                                <option value="poster">Poster</option>
+                                <option value="presentacion">Presentación</option>
+                            </select>
+                            <div class="add__submit">
+                                <input type="submit" name="submit" value="Enviar" id="submit" class="add__button__submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        © Todos los derechos reservados. SMITEIMYT México
+    </footer>
+    <script src="../Jquery/jquery-3.7.0.js"></script>
+    <script src="../index.js" type="module"></script>
+    <script src="../js/conferencia.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./pages/CSS/styles.css">
+  <title>SMITEIMYT</title>
+</head>
+
+<body>
+  <!-- Colocamos el menú de navegación creado en nuestro componente -->
+  <main-navbar></main-navbar>
+
+  <main class="main">
+    <!--área del mensaje de bienvenida-->
+    <section class="main__hero">
+      <div class="main__message">
+        <h2 class="main__text main__text__h2">Bienvenidos <br> SMITEIMYT</h2>
+        <p class="main__text">Sociedad mexicana de Ingeniería en Tecnologías de la Información, Mecatrónica y Telemática
+          A.C.</p>
+      </div>
+    </section>
+
+    <!--Area en la cual se agrega el carrusel de imagenes -->
+    <section class="main__carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <!--Inicio de código necesario para agregar una nueva imagen-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 max-height-lg" src="./images/main_hero.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ttitulo 1</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut fugiat minus.</p>
+            </div>
+          </div>
+          <!--Fin de código-->
+
+          <div class="carousel-item">
+            <img class="d-block w-100 max-height-lg" src="./images/fondo_miembros2.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ttitulo 2</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut fugiat minus.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100 max-height-lg" src="./images/fondo_miembros3.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ttitulo 3</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut fugiat minus.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Código necesario para la creación de los controles del carrusel-->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="main__history">
+      <div class="main__content">
+        <h2 class="main__text main__text__h2">Historia</h2>
+        <p class="main__text__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repudiandae
+          possimus asperiores magnam ut, at velit aperiam ad ea reprehenderit sed recusandae dignissimos error assumenda
+          id quas veniam ab minima!
+          A blanditiis dolor dolores dignissimos, harum, delectus maxime amet ipsa nisi dolore deleniti. Reiciendis
+          possimus libero facere vero aperiam dolorem nostrum eaque a quaerat unde eum saepe, consequuntur at quo?
+          Iusto voluptatum odit fugit eaque, assumenda quidem voluptas molestiae ipsa adipisci ut modi, veniam fugiat
+          quod cum? Similique aliquam architecto deserunt impedit quasi est, accusantium sit minus beatae, eum fugiat.
+          Temporibus consectetur, repudiandae in quidem vero voluptatibus doloremque, quia quasi nemo atque corrupti. Ex
+          soluta error illo dolorem id sit labore beatae doloribus laudantium. Qui libero facilis ea repellat nemo?
+          Odit, cum iste rerum repellendus omnis fuga veniam repellat. Voluptatum molestias itaque, laudantium excepturi
+          neque placeat maiores modi minus quod hic repudiandae nulla autem vitae voluptatem consectetur temporibus
+          earum quis.
+          Necessitatibus iste impedit natus, eos commodi esse illo odit voluptatum deserunt atque quasi magnam illum
+          architecto vitae saepe, expedita eum corrupti ducimus laborum unde libero ex quaerat. Adipisci, ullam rem.
+        </p>
+      </div>
+    </section>
+    <section class="main__vision">
+      <h2 class="main__text main__text__h2">Misión</h2>
+      <p class="main__text__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe delectus sint
+        laboriosam mollitia? Voluptatum atque soluta laudantium mollitia, ea necessitatibus dolorem, autem at dolor rem,
+        esse porro vel consectetur illo.</p>
+      <h2 class="main__text main__text__h2">Visión</h2>
+      <p class="main__text__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe delectus sint
+        laboriosam mollitia? Voluptatum atque soluta laudantium mollitia, ea necessitatibus dolorem, autem at dolor rem,
+        esse porro vel consectetur illo.</p>
+    </section>
+
+    <section class="main__ubication">
+      <div class="ubication">
+        <h2 class="main__text main__text__h2">Ubicación</h2>
+        <h3>Dirección</h3>
+        <p class="main__text__paragraph">Av. Tecnológico S/N, Valle de Anahuac, 55210 Ecatepec de Morelos, Méx.</p>
+      </div>
+      <div class="horario">
+        <h3>Horario de atención</h3>
+        <p class="main__text__paragraph">Lunes a viernes <br>
+          09:00 - 18:00</p>
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.7199258377436!2d-99.04318542590882!3d19.510681938184874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fa94a2bf91f9%3A0x700d93a5d515a259!2sTecNM%20-%20Tecnol%C3%B3gico%20de%20Estudios%20Superiores%20de%20Ecatepec!5e0!3m2!1ses-419!2smx!4v1689000683114!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <footer class="footer">
+    © Todos los derechos reservados. SMITEIMYT México
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./index.js" type="module"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+h3{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.nav{
+    background-color: #293241;
+    height: 80px;
+    color: #fff;
+}
+
+.nav__container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.nav__menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2.5em;
+}
+
+.nav__item{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__item:hover{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav__label, .nav__input{
+    display: none;
+}
+
+.main{
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-areas: 
+    "main"
+    "carousel"
+    "historia"
+    "mision"
+    "ubicacion";
+}
+
+.main__message{
+    grid-area: main;
+    min-height: 150px;
+}
+
+.main__carousel{
+    grid-area: "carousel";
+}
+
+.max-height-lg{
+    max-height: 50vh;
+    image-rendering: optimizeQuality;
+}
+
+.main__background{
+    background-image: url("./assets/wave1.svg");
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.main__text{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.main__text__h2{
+    color: #000;
+}
+
+.main__text__paragraph{
+    padding: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main__history{
+    grid-area: historia;
+    margin-top: 10px;
+    background-color: #fff;
+    align-items: center;
+}
+
+.main__vision{
+    grid-area: mision;
+    margin-top: 10px;
+    /* background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%); */
+}
+
+.main__ubication{
+    grid-area: ubicacion;
+    margin-top: 10px;
+    background-color: #fff;
+    justify-content: space-around;
+}
+
+.map{
+    position: relative;
+    display: flex;
+    left: 60%;
+    bottom: 35%;
+}
+
+.footer{
+    text-align: center;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    border-top: 1.5px solid rgba(211, 211, 211, 0.863);
+}
+
+@media (max-width: 700px){
+    .nav__logo{
+        font-size: 1em;
+        font-weight: 900;
+    }
+
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #293241;
+        width: 100%;
+        height: 60%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        z-index: 100;
+    }
+
+    .nav__input:checked + .nav__menu{
+       clip-path: circle(100% at center);
+    }
+
+    .main__text{
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    .main__title, .main__paragraph{
+        font-size: 1.2em;
+    }
+
+    .main__text__h2{
+        color: #000;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    .img{
+        position: relative;
+        display: flex;
+        width: 150px;
+        height: 150px;
+        left: 55%;
+        bottom: 20%;
+    }
+
+    .footer{
+        text-align: center;
+        padding: 10px;
+        font-size: 10px;
+        display: block;
+        width: 100%;
+        bottom: 0;
+        border-top: 1.5px solid rgba(211, 211, 211, 0.863);
+    }
+}

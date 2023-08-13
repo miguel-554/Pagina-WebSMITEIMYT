@@ -1,0 +1,99 @@
+<?php
+include("../php/subir.php");
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/formulario.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+   <!-- Colocamos el menú de navegación creado en nuestro componente -->
+   <main-navbar></main-navbar>
+
+    <main class="main">
+        <div class="main__container" id="main__container">
+
+            <div class="main__tittle">
+                <h2 class="main__text__h2">Solicitud de Registro</h2>
+            </div>
+            
+            <div class="main__form" id="main__form">
+            <form action="../php/subir.php" method="post" enctype="multipart/form-data" id="main-form">
+
+                <div class="main__input main__form__name">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required class="main__input__answer">
+                </div>
+
+                <div class="main__input main__form__lastname">
+                    <label for="lastname">Apellidos:</label><br>
+                    <input type="text" id="lastname" name="apellidos" required class="main__input__answer" >
+                </div>
+
+                <div class="main__input main__form__movil">
+                    <label for="movil">Número de Tel:</label><br>
+                    <input type="text" id="movil" name="movil" required class="main__input__answer">
+                </div>
+
+                <div class="main__input main__form__email">
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="text" id="email" name="email" required class="main__input__answer">
+                </div>
+
+                <div class="main__input main__form__folio">
+                    <label for="folio">N° de Folio de transferencia:</label><br>
+                    <input type="text" id="folio" name="folio" required class="main__input__answer">
+                </div>
+
+                <div class="main__input main__form__date">
+                    <label for="date">Fecha de transferencia:</label><br>
+                    <input type="date" id="date" name="date" required class="main__input__answer" placeholder="AAAA-MM-DD">
+                </div>
+
+                <div class="main__input main__form__file">
+                    <label for="file">Subir archivo:</label><br>
+                    <input type="file" id="file" name="file" required class="main__input__answer file">
+                </div>
+
+                <div class="main__input main__form__type" id="main__form__type">
+                    <label for="type">Tipo de Incripción:</label><br>
+                    <select name="select" id="type" class="type">
+                        <option value="estudiante">Estudiante</option>
+                        <option value="profesor">Profesor</option>
+                        <option value="evaluador">Evaluador</option>
+                        <option value="revisor">Revisor Técnico</option>
+                        <option value="ponente">Ponente</option>
+                        <option value="conferencista">Conferencista Magistral</option>
+                        <option value="socioI">Socio Investigador</option>
+                    </select>
+                </div>
+
+                <div class="main__input main__form__description">
+                    <label for="description">Descripción</label><br>
+                    <textarea name="description" id="description" cols="33" rows="6"></textarea>
+                </div>
+
+                <div class="main__submit">
+                    <input type="submit" value="Enviar" class="main__button__submit">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        © Todos los derechos reservados. SMITEIMYT México
+    </footer>
+
+    <script src="../js/formulario.js"></script>
+    <script src="../index.js" type="module"></script>
+</body>
+
+</html>

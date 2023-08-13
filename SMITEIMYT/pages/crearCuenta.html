@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/crearCuenta.css">
+    <title>Crear cuenta</title>
+</head>
+<body>
+    <!-- Colocamos el menú de navegación creado en nuestro componente -->
+    <main-navbar></main-navbar>
+
+    <section class="access">
+        <div class="container-form sign-in">
+            <div class="welcome-back">
+                <div class="message">
+                    <h1>Bienvenido a SMITEIMYT</h1>
+                    <h2 class="acceder">Regístrate</h2>
+                </div>
+                <div class="form" id="main-form">
+                    <form class="form-access">
+                        <label for="name">Nombre(s):</label>
+                        <input class="form-input" type="text" id="name">
+                        <label for="apellidoP">Apellido paterno:</label>
+                        <input class="form-input" type="text" id="apellidoP">
+                        <label for="apellidoM">Apellido materno:</label>
+                        <input class="form-input" type="text" id="apellidoM">
+                        <label for="email">Correo electrónico:</label>
+                        <input class="form-input" type="email" name="email" id="email">
+                        <label for="password">Contraseña:</label>
+                        <input class="form-input" type="password" name="password" id="password">
+                        <label for="type">Tipo de usuario:</label><br>
+                        <div id="new-form">
+                        <select name="select" id="type" class="type">
+                            <option value="estudiante">Estudiante</option>
+                            <option value="profesor">Profesor</option>
+                            <option value="evaluador">Evaluador</option>
+                            <option value="revisor">Revisor Técnico</option>
+                            <option value="ponente">Ponente</option>
+                            <option value="conferencista">Conferencista Magistral</option>
+                            <option value="socioI">Socio Investigador</option>
+                        </select>
+                        </div>
+                        <button class="btn-acceder">Registrarme</button>
+                    </form>
+                </div>
+                <div class="create-account">
+                    <p class="create-account__item">¿Ya tienes una cuenta?</p>
+                    <button class="create-account__item btn-create"><a href="../pages/acceso.html">Inicia sesión</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        © Todos los derechos reservados. SMITEIMYT México
+    </footer>
+
+    <script src="../js/crearcuenta.js"></script>
+    <script src="../index.js" type="module"></script>
+</body>
+</html>

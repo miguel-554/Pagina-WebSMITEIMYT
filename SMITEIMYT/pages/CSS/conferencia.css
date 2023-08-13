@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.main{
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__image{
+    position: relative;
+    background-image: url("../../images/fondo_miembros2.jpg") ,linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    z-index: -1;
+}
+
+.main__title__donaciones{
+    position: absolute;
+    font-size: 2em;
+    top: 50%;
+    left: 36.2%;
+    margin: -25px 0 0 -25px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 10px;
+    z-index: -1;
+}
+
+.add{
+    padding: 5px;
+    background-color: #fff;
+}
+
+.add__container{
+    padding-top: 10px;
+    display: inline-block;
+    margin:  0 auto;
+    width: 70%;
+    height: 900px;
+    border: 1px solid slategray;
+}
+
+.add__tittle{
+    display: flex;
+    margin: 0 auto;
+    background-color: #3b5998;
+    width: 100%;
+    height: 60px;
+    border: 1px solid white;
+    justify-content: center;
+}
+
+.add__text__h2{
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+.add__submit{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    bottom: 10px;
+}
+
+.add__button__submit{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #3b5998;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.add__button__submit:hover{
+    background-color: #48e6e6;
+}
+
+.main__form{
+    display: grid;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main__input{
+    padding: 10px;
+}
+
+.add_form_option *{
+    padding: 5px;
+}
+
+.new_author{
+    height: 35px;
+}
+
+.main__input__answer, select{
+    width: 250px;
+    height: 30px;
+}
+
+.footer{
+    text-align: center;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    border-top: 1.5px solid rgba(211, 211, 211, 0.863);
+}
+
+
+
